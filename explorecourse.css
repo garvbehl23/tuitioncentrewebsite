@@ -1,0 +1,558 @@
+/* Modal styles */
+
+
+/* Reset some basic elements */
+
+body,
+h1,
+h2,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+}
+
+
+/* Container */
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+/* Header styling */
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    border-bottom: 4px solid #f0b330;
+}
+
+header .logo {
+    text-align: center;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    color: black;
+    background-color: #f0b330;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background: #f0b330;
+}
+
+
+/* Hero section */
+
+.hero {
+    background: url('https://source.unsplash.com/1600x900/?education') no-repeat center center/cover;
+    height: 500px;
+    position: relative;
+}
+
+.hero .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+}
+
+.hero .hero-content h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero .hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    text-decoration: none;
+    background: #f0b330;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.hero .btn:hover {
+    background: #fff;
+}
+
+
+/* About section */
+
+#about {
+    background: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#about p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+
+/* Footer */
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    border-top: 4px solid #f0b330;
+}
+
+
+/* Modal styles */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+    border-radius: 10px;
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+}
+
+.modal-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.modal-content ul li {
+    margin-bottom: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
+
+#about {
+    background: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#about p {
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.founder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.founder img {
+    border-radius: 50%;
+    width: 200px;
+    /* Increased image size */
+    height: 200px;
+    /* Increased image size */
+    object-fit: cover;
+    margin-bottom: 20px;
+    /* Space between image and text */
+}
+
+.founder-details {
+    text-align: center;
+    /* Center-align the text */
+}
+
+.founder-details h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.5em;
+    /* Larger font size for the name */
+}
+
+.founder-details p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+
+/* Courses section */
+
+#courses {
+    background: #f9f9f9;
+    padding: 50px 0;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Courses Page Styles */
+
+.courses-container {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 80px auto;
+    /* Adjusted for fixed navbar */
+    text-align: center;
+}
+
+.courses-container h1 {
+    color: black;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.courses-container p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.course {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.course h2 {
+    color: black;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.course p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.course a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.course a:hover {
+    text-decoration: underline;
+}
+
+
+/* Fee Payment section */
+
+#fee-payment {
+    background: #f4f4f4;
+    padding: 50px 0;
+}
+
+#fee-payment h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+#paymentForm {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background: #007BFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+
+/* Contact section */
+
+#contact {
+    background: #f4f4f4;
+    padding: 50px 0;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.auth-options,
+.contact-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.auth-options h3,
+.contact-form h3 {
+    font-size: 2em;
+    color: #333;
+}
+
+.auth-options button,
+.contact-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+    color: #fff;
+    background: #007BFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.auth-options button:hover,
+.contact-form button:hover {
+    background: #0056b3;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+
+/* Live Classes Page Styles */
+
+.live-classes-container {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 80px auto;
+    /* Adjusted for fixed navbar */
+    text-align: center;
+}
+
+.live-classes-container h1 {
+    color: black;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.live-classes-container p {
+    font-size: 18px;
+    color: #555;
+}
+
+.class-plan {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.class-plan h2 {
+    color: black;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.class-plan p {
+    font-size: 16px;
+    color: #333;
+}
+
+.class-plan .btn {
+    display: inline-block;
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.class-plan .btn:hover {
+    background-color: #218838;
+}
+
+.contact-info {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.contact-info h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}

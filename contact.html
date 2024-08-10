@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - SHREE RAM TUITION CENTRE</title>
+    <link rel="stylesheet" href="styles/explorecourse.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="container">
+
+            <div class="logo">
+                <h1>SHREE RAM TUITION CENTRE</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="live-classes.html">Live Classes</a></li>
+                    <li><a href="fees.html">Fee Payment</a></li>
+                    <li><a href="contact.html">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Registration Form -->
+    <div class="registration-container">
+        <h2>Register</h2>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+            </div>
+            <button type="submit" class="btn">Register</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Sign in here</a>.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
