@@ -1,7 +1,6 @@
-/* Modal styles */
 
 
-/* Reset some basic elements */
+
 
 body,
 h1,
@@ -19,7 +18,7 @@ body {
 }
 
 
-/* Container */
+
 
 .container {
     width: 80%;
@@ -28,7 +27,6 @@ body {
 }
 
 
-/* Header styling */
 
 header {
     background: #333;
