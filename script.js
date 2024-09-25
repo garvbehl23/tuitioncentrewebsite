@@ -1,9 +1,7 @@
-// JavaScript for smooth scroll (optional)
 
-// Ensure DOM is fully loaded
 document.addEventListener('DOMContentLoaded', function() {
 
-    // Navigation Bar Highlight
+
     const currentLocation = location.href;
     const menuItem = document.querySelectorAll('nav ul li a');
     const menuLength = menuItem.length;
@@ -12,8 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
             menuItem[i].className = "active";
         }
     }
-
-    // Form Validation for Contact Page
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function(event) {
@@ -22,8 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
             contactForm.reset();
         });
     }
-
-    // Payment Form Handling
     const paymentForm = document.getElementById('paymentForm');
     if (paymentForm) {
         paymentForm.addEventListener('submit', function(event) {
@@ -33,7 +27,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Lock Pages Until Signed In
     const protectedLinks = document.querySelectorAll('.protected');
     if (sessionStorage.getItem('signedIn') !== 'true') {
         protectedLinks.forEach(link => {
@@ -44,8 +37,6 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
-
-    // Registration Form Handling
     const registerForm = document.getElementById('registerForm');
     if (registerForm) {
         registerForm.addEventListener('submit', function(event) {
@@ -56,13 +47,13 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Animations on Home Page
+
     const homePage = document.querySelector('.home-container');
     if (homePage) {
         homePage.classList.add('fade-in');
     }
 
-    // Course Exploration Handling
+    
     const exploreButtons = document.querySelectorAll('.explore-btn');
     exploreButtons.forEach(button => {
         button.addEventListener('click', function() {
